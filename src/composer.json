@@ -1,5 +1,5 @@
 {
-    "name": "Inlislite",
+    "name": "perpus/inlislite",
     "description": "INLIS Lite merupakan perangkat lunak (software) aplikasi otomasi perpustakaan yang dibangun dan dikembangkan oleh Perpustakaan Nasional Republik Indonesia (Perpusnas) sejak tahun 2011. ",
     "keywords": ["inlislite", "inlislite perpusnas", "inlislite perpustakaan nasional republik indonesia", "inlis"],
     "homepage": "http://inlislite.perpusnas.go.id",
@@ -12,6 +12,12 @@
             "homepage": "http://www.inlislite.perpusnas.go.id/"
         }
     ],
+    "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
     
     "minimum-stability": "dev",
     "require": {
@@ -60,7 +66,10 @@
         "yiisoft/yii2-faker": "*"
     },
     "config": {
-        "process-timeout": 1800
+        "process-timeout": 1800,
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
     },
     "extra": {
         "asset-installer-paths": {
