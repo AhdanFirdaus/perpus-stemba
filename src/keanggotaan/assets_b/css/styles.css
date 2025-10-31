@@ -283,6 +283,67 @@ input[type="checkbox"] {
     border-radius: 5px 5px 0 0;
     font-weight: bold;
 }
+
+/* Responsive thumb-login */
+.container-login {
+    background: url(../img/hero.png) right top no-repeat;
+    padding-bottom: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: contain;
+    background-position: center top;
+}
+
+/* Ukuran default untuk desktop */
+.container-login {
+    width: 970px;
+    background-size: auto;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .container-login {
+        width: 100%;
+        max-width: 750px;
+        background-size: 50% auto;
+        background-position: right 30px top;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 767px) {
+    .container-login {
+        width: 100%;
+        background-size: 300px auto;
+        background-position: center 20px;
+        padding-top: 180px; /* Memberikan ruang untuk gambar */
+    }
+    
+    .container-login .jumbotron {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .container-login {
+        background-size: 250px auto;
+        padding-top: 150px;
+    }
+    
+    .login-form {
+        padding: 15px;
+    }
+    
+    .login-form .login-field {
+        font-size: 16px;
+    }
+}
+
+/* Very Small Mobile */
 @media (max-width: 360px) {
     .text {
         font-size:.8em;
@@ -303,6 +364,11 @@ input[type="checkbox"] {
         font-size:1.3em;
         position:relative;
         line-height:15px;
+    }
+    
+    .container-login {
+        background-size: 200px auto;
+        padding-top: 120px;
     }
 }
 @media (max-width: 680px) {
@@ -358,14 +424,7 @@ input[type="checkbox"] {
     }
     .container-login {
         width: 970px;
-        background:url(../img/thumb-login.png) right top no-repeat;
-        padding-bottom:50px
-    }
-    .container-login {
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
+        background-size: auto;
     }
     .container-login .jumbotron,
     .container-fluid .jumbotron {
