@@ -10,7 +10,14 @@ $this->title = 'Portal Aplikasi Inlis Lite';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $this->title ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+<style>
+    * {
+        font-family: "Lexend Deca";
+    }
+</style>
     <link rel="stylesheet" href="<?= Url::to('@web/css/site.css') ?>">
 </head>
 <body>
@@ -204,7 +211,7 @@ $this->title = 'Portal Aplikasi Inlis Lite';
     <footer class="footer">
         <div class="container footer-inner">
             <div class="footer-left">
-                <p>&copy; <?= date('Y') ?> <strong>Inlis Lite</strong>. Semua hak cipta dilindungi.</p>
+                <p>Hak Cipta &copy; 2017 - <?= date('Y') ?> Perpustakaan Nasional Republik Indonesia</p>
                 <!-- <div class="footer-links">
                     <a href="#">Panduan</a>
                     <a href="#">FAQ</a>
@@ -212,10 +219,7 @@ $this->title = 'Portal Aplikasi Inlis Lite';
                 </div> -->
             </div>
             <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <p>INLISLite v3.2</p>
             </div>
         </div>
     </footer>
