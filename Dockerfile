@@ -15,13 +15,10 @@ RUN mkdir /docker
 COPY ./docker/uploaded_files.tar.gz /docker/
 
 #Add vendor
-RUN mkdir /app/web/vendor
-ADD --chown=www-data:www-data docker/vendor/vendor1.tar.gz /app/web/vendor/
-ADD --chown=www-data:www-data docker/vendor/vendor2.tar.gz /app/web/vendor/
 
 # INSTALL rar extension to /usr/local/lib/php/extensions/no-debug-non-zts-20131226
 WORKDIR /
-RUN curl http://pecl.php.net/get/rar-3.0.2.tgz -o rar-3.0.2.tgz \
+RUN curl -L http://pecl.php.net/get/rar-3.0.2.tgz -o rar-3.0.2.tgz \
     && gunzip rar-3.0.2.tgz \
     && tar -xvf rar-3.0.2.tar \
     && rm rar-3.0.2.tar
