@@ -1,7 +1,7 @@
 <?php
 /* @var $this yii\web\View */
 use yii\helpers\Url;
-$this->title = 'Portal Aplikasi Inlis Lite';
+$this->title = 'Portal Perpustakaan SMKN 7 Semarang';
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -24,7 +24,7 @@ $this->title = 'Portal Aplikasi Inlis Lite';
     <header class="header">
         <div class="container header-content">
             <?= yii\helpers\Html::img(Url::base().'/'.Url::to('uploaded_files/aplikasi/stemba.png'), [
-                'alt' => 'Portal Aplikasi Inlis Lite',
+                'alt' => 'Portal Perpustakaan SMKN 7 Semarang',
                 'class' => 'logo animate-fade-in'
             ]) ?>
             <h1 class="animate-slide-down">Portal Perpustakaan SMKN 7 Semarang</h1>
