@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
 :root {
   --primary: #4361ee;
   --primary-dark: #3a56d4;
@@ -33,7 +35,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lexend Deca";
   background: var(--gradient-bg);
   color: var(--dark);
   line-height: 1.6;

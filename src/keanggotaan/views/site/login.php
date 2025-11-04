@@ -45,13 +45,13 @@ $fieldOptions2 = [
                     <div class="col-sm-3">
                     <?= Html::submitButton(Yii::t('app', 'Masuk'), ['class' => 'btn btn-success btn-md btn-block', 'name' => 'login-button']) ?>
                     </div>
-                    <div class="col-sm-9"><?= Html::a(Yii::t('app', 'Lupa password / No. Anggota ?'), ['site/request-password-reset']) ?>.</div>
+                    <div class="col-sm-9"><?= Html::a(Yii::t('app', 'Lupa password / No. Anggota ?'), ['site/request-password-reset']) ?></div>
                 </div>
                <br/>
                 <hr>
                 <div class="form-group">
-                    <h4><?= Html::a(Yii::t('app', 'Pendaftaran Anggota'),['../pendaftaran/'], ['class' => '', 'name' => 'login-button','onClick'=>'GoToPagePendaftaran();']) ?></h4>
-                    <h4><?= Html::a(Yii::t('app', 'Belum memiliki password'),['../pendaftaran/anggota-aktif'], ['class' => '', 'name' => 'login-button','onClick'=>'GoToPageAktivasi();']) ?></h4>
+                    <h5><?= Html::a(Yii::t('app', 'Pendaftaran Anggota'),['../pendaftaran/'], ['class' => '', 'name' => 'login-button','onClick'=>'GoToPagePendaftaran();']) ?></h5>
+                    <h5><?= Html::a(Yii::t('app', 'Belum memiliki password'),['../pendaftaran/anggota-aktif'], ['class' => '', 'name' => 'login-button','onClick'=>'GoToPageAktivasi();']) ?></h5>
                 </div>
 
             <?php ActiveForm::end(); ?>
