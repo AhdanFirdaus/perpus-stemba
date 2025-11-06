@@ -32,4 +32,3 @@ phpunit.phar
 
 #vendor
 src/vendor
-src/vendor.zip

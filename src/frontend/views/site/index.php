@@ -46,11 +46,11 @@ $this->title = 'Portal Aplikasi Inlis Lite';
             
             <div class="stats-section">
                 <div class="stat-item animate-slide-up" style="--delay: 0.1s;">
-                    <span class="stat-number">15K+</span>
+                    <span class="stat-number">14K+</span>
                     <span class="stat-label">Koleksi Buku</span>
                 </div>
                 <div class="stat-item animate-slide-up" style="--delay: 0.2s;">
-                    <span class="stat-number">8K+</span>
+                    <span class="stat-number">2.1K+</span>
                     <span class="stat-label">Anggota Aktif</span>
                 </div>
                 <div class="stat-item animate-slide-up" style="--delay: 0.3s;">

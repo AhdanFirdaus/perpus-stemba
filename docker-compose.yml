@@ -33,5 +33,24 @@ services:
       - ./db/inlislite_v3_dump.sql:/docker-entrypoint-initdb.d/inlislite_v3_dump.sql
       - db_data:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: inlislite_phpmyadmin
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - "8888:80"  # Access phpMyAdmin at http://localhost:8888
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+      UPLOAD_LIMIT: 100M
+    # Optional: set language or theme
+    # environment:
+    #   - PMA_ARBITRARY=1
+    #   - PMA_ABSOLUTE_URI=http://localhost:8888/
+
 volumes:
   db_data:
